@@ -7,6 +7,9 @@ const GOERLI_PRIVATE_KEY =
 
 const config: HardhatUserConfig = {
   networks: {
+    hardhat: {
+      chainId: 31337,
+    },
     goerli: {
       url: `https://eth-goerli.g.alchemy.com/v2/${ALCHEMY_API_KEY}`,
       accounts: [GOERLI_PRIVATE_KEY],
